@@ -1,3 +1,3 @@
 def ordered_count(str)
-    return ['a', str.length ]
+    str.scan /\w/
 end
