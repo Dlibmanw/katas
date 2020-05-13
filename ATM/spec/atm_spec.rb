@@ -13,4 +13,8 @@ describe 'atm' do
     expect(solve(770)).to eq 4
   end
 
+  it 'return -1 when the input is not divisible' do
+     expect(solve(125)).to eq -1 
+  end
+
 end
