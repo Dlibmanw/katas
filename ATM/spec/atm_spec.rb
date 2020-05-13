@@ -8,4 +8,9 @@ describe 'atm' do
   it 'returns 2 when the input is an amout os 550' do
     expect(solve(550)).to eq 2
   end
+
+  it 'returns 4 when the input is an amout os 770' do
+    expect(solve(770)).to eq 4
+  end
+
 end
