@@ -10,10 +10,10 @@ Try to find minimal number of notes that must be used to repay in dollars, or ou
 
 # input - output examples:
 
-| Input | Output|
-|  ---  |  ---  | 
-|  500  |   1   |
-|  550  |   2   |
-|  770  |   4   |
-|  125  |  -1   |
-|  666  |  -1   |
+| Input | Output |
+| --- | --- | 
+| 500 | 1 |
+| 550 | 2 |
+| 770 | 4 |
+| 125 | -1 |
+| 666 | -1 |
