@@ -10,5 +10,10 @@ describe '#change1' do
       string = 'a'
       expect(change1(string)).to eq '10000000000000000000000000'
     end
-end
+    
+    it 'print 10000000000000000000000000 when the input beggins with a' do
+      string = 'A$@'
+      expect(change1(string)).to eq '10000000000000000000000000'
+    end
 
+  end
