@@ -16,4 +16,13 @@ describe '#change1' do
       expect(change1(string)).to eq '10000000000000000000000000'
     end
 
+    it 'print 10000000000000000000000000 when the input beggins with a' do
+        string = 'b'
+        expect(change1(string)).to eq '01000000000000000000000000'
+      end
+
+    it 'print 10000000000000000000000000 when the input beggins with a' do
+        string = 'aa'
+        expect(change1(string)).to eq '10000000000000000000000000'
+    end
   end
