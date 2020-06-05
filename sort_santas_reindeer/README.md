@@ -16,5 +16,11 @@ In case of two identical last names, keep the original order
 
 | Input | Output |
 | --- | --- | 
-
-| "Dasher Tonoyan", "Dancer Moore", "Prancer Chua", "Vixen Hall","Comet Karavani","Cupid Foroutan", "Donder Jonker", "Blitzen Claus" | "Prancer Chua","Blitzen Claus", "Cupid Foroutan", "Vixen Hall", "Donder Jonker", "Comet Karavani","Dancer Moore", "Dasher Tonoyan" |
+| "Dasher Tonoyan", | "Prancer Chua", |
+| "Dancer Moore", | "Blitzen Claus" |
+| "Prancer Chua", | "Cupid Foroutan" |
+| "Vixen Hall", | "Vixen Hall" |
+| "Comet Karavani", | "Donder Jonker" |
+| "Cupid Foroutan", | "Comet Karavani" |
+| "Donder Jonker", | "Dancer Moore" |
+| "Blitzen Claus" | "Dancer Moore" |
