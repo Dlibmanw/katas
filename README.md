@@ -13,3 +13,4 @@ A series of exercise to practice every day. From Codewars
 | [Ordered count](https://github.com/Dlibmanw/katas/tree/master/ordered_count)  | 2 hours  |  Ruby, RSpec  |
 | [ATM](https://github.com/Dlibmanw/katas/tree/master/ATM)  | 2 hours  |  Ruby, RSpec  |
 | [Search_for_letters](https://github.com/Dlibmanw/katas/tree/master/Search_for_letters)  | 3 hours  |  Ruby, RSpec  |
+| [Sort_santas_reindeer](https://github.com/Dlibmanw/katas/tree/master/sort_santas_reindeer)  | 3 hours  |  Ruby, RSpec  |

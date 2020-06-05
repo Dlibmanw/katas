@@ -4,7 +4,8 @@ Happy Holidays fellow Code Warriors!
 Now, Dasher! Now, Dancer! Now, Prancer, and Vixen! On, Comet! On, Cupid! On, Donder and Blitzen! That's the order Santa wanted his reindeer...right? What do you mean he wants them in order by their last names!? Looks like we need your help Code Warrior!
 
 ```
-Write a function that accepts a sequence of Reindeer names, and returns a sequence with the Reindeer names sorted by their last names.
+Write a function that accepts a sequence of Reindeer names.
+And returns a sequence with the Reindeer names sorted by their last names.
 ```
 
 ## Notes:
@@ -16,16 +17,4 @@ In case of two identical last names, keep the original order
 | Input | Output |
 | --- | --- | 
 
-| "Dasher Tonoyan", 
-"Dancer Moore", 
-"Prancer Chua", 
-"Vixen Hall","Comet Karavani", 
-"Cupid Foroutan", "Donder Jonker", 
-"Blitzen Claus" | "Prancer Chua",
-  "Blitzen Claus",
-  "Cupid Foroutan", 
-  "Vixen Hall", 
-  "Donder Jonker", 
-  "Comet Karavani",
-  "Dancer Moore", 
-  "Dasher Tonoyan" |
+| "Dasher Tonoyan", "Dancer Moore", "Prancer Chua", "Vixen Hall","Comet Karavani","Cupid Foroutan", "Donder Jonker", "Blitzen Claus" | "Prancer Chua","Blitzen Claus", "Cupid Foroutan", "Vixen Hall", "Donder Jonker", "Comet Karavani","Dancer Moore", "Dasher Tonoyan" |
