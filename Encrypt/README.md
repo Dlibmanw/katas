@@ -12,7 +12,7 @@ Keepin' it simple: There are no special characters in input.
 
 
 
-## Input and Otput
+## Input and Output
 
 | Input | Output |
 | --- | --- | 
