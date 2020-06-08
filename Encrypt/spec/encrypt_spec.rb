@@ -1,12 +1,12 @@
 require 'encrypt'
 
 describe '#decipher_this' do
-    it 'return 72ello if the input Hello' do
-        expect(decipher_this('Hello')).to eq '72ello'
+
+    it 'return 66ye if the input Bye' do
+      expect(decipher_this('Bye')).to eq '66ey'
     end
 
-    it 'return 72ello if the input Hello' do
-      expect(decipher_this('Bye')).to eq '66ye'
+    it 'return 72olle if the input Hello' do
+        expect(decipher_this('Hello')).to eq '72olle'
     end
-
 end
