@@ -14,4 +14,11 @@ describe '#decipher_this' do
       expect(decipher_this('Hello world')).to eq '72olle 119drlo'
     end
     
+    it 'return "" if the input empty' do
+      expect(decipher_this('')).to eq ''
+    end
+
+    it 'return "72e" if the input He' do
+      expect(decipher_this('He')).to eq '72e'
+    end
 end

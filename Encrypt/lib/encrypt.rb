@@ -9,7 +9,6 @@ def decipher_this(string)
     'x' => '120', 'y' => '121', 'z' => '122'
   }
     arr << string.split(" ")
-    arr[0][1]
     arr[0].each do |word| 
       word[1], word[-1] =  word[-1], word[1]
       word[0] = ascii[word[0]]
