@@ -21,4 +21,8 @@ describe '#decipher_this' do
     it 'return "72e" if the input He' do
       expect(decipher_this('He')).to eq '72e'
     end
+
+    it 'returns "65 119esi 111dl 111lw" if the input is "A wise old owl"' do
+      expect(decipher_this('A wise old owl')).to eq '65 119esi 111dl 111lw'
+    end 
 end

@@ -10,7 +10,9 @@ def decipher_this(string)
   }
     arr << string.split(" ")
     arr[0].each do |word| 
-      word[1], word[-1] =  word[-1], word[1]
+      if word.length > 2
+        word[1], word[-1] =  word[-1], word[1]
+      end
       word[0] = ascii[word[0]]
       output << word
     end
