@@ -10,9 +10,7 @@ def string_letter_count(string)
   end
   result = []
   output.uniq.sort.each do |item|
-    if item.length < 3
-      result << item.reverse
+    result << (item.split('').drop(1).push(item[0]))
     end
-  end
   return result.join
 end
