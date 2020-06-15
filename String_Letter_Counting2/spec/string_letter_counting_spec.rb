@@ -24,5 +24,13 @@ describe '' do
   it 'returns 1e1h2l1o when the input is "hello"' do
    expect(string_letter_count('hello')).to eq '1e1h2l1o'
   end
+
+  it 'returns 1e1h2l1o when the input is "hello4"' do
+    expect(string_letter_count('hello4')).to eq '1e1h2l1o'
+   end
+
+   it 'returns 1e1h2l1o when the input is "hello4"' do
+    expect(string_letter_count('aaaaaaaaaaaa')).to eq '12a'
+   end
   
 end
