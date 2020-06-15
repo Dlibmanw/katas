@@ -20,7 +20,9 @@ describe '' do
   it 'returns "" when the input is "/."' do
     expect(string_letter_count('/.')).to eq ''
   end
-   #it 'returns 1e1h2l1o when the input is "hello"' do
-   # expect(string_letter_count('hello')).to eq '1e1h2l1o'
-  #end
+
+  it 'returns 1e1h2l1o when the input is "hello"' do
+   expect(string_letter_count('hello')).to eq '1e1h2l1o'
+  end
+  
 end
