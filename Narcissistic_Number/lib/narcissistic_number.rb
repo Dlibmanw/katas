@@ -11,7 +11,4 @@ def narcissistic(number)
     else
       return false
     end
-    return sum
   end
-
-# 74239.to_s.split('').map(&:to_i)
