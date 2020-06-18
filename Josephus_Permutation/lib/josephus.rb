@@ -1,18 +1,16 @@
 def josephus(items,k)
   items = items
-  i = 1
-  new_array = []
+  l = items.length
+  k = k
   result = []
-  unless items.length == 0
-    items.each do |num|
-      if (i < items.length) && (i % 3 != 0)
-        new_array << num
+  i = 1 
+  while result.length != l 
+    for num in items do
+      if i % k != 0 
         i += 1
-      elsif (i < items.length) && (i % 3 == 0)
-        result << items.slice!(i+1)
-        i += 1
-      else
-        items = new_array
+      else i % k == 0 
+        result << items.slice(items.find_index(num))
+        # items.delete(num)
         i = 1
       end
     end
