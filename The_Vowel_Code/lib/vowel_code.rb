@@ -1,4 +1,5 @@
 def encode(st)
+arr = []
 vowels = {
   'a' => '1',
   'e' => '2',
@@ -6,7 +7,12 @@ vowels = {
   'o' => '4',
   'u' => '5'
   }
-  if vowels.include?st 
-    return vowels[st]
+  st.split("").each do | letter |
+    if vowels.include?letter
+      arr << vowels[letter]
+    else 
+      arr << letter
+    end
   end
+  return arr.join
 end
