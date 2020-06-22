@@ -1,15 +1,15 @@
-def encode(st)
-arr = []
-vowels = {
+VOWELS = {
   'a' => '1',
   'e' => '2',
   'i' => '3',
   'o' => '4',
   'u' => '5'
   }
+  def encode(st)
+  arr = []
   st.split("").each do | letter |
-    if vowels.include?letter
-      arr << vowels[letter]
+    if VOWELS.include?letter
+      arr << VOWELS[letter]
     else 
       arr << letter
     end
@@ -19,16 +19,9 @@ end
 
 def decode(st)
   arr = []
-  vowels = {
-  'a' => '1',
-  'e' => '2',
-  'i' => '3',
-  'o' => '4',
-  'u' => '5'
-  }
   st.split("").each do | char |
-    if vowels.values.include?char
-      arr << vowels.key(char)
+    if VOWELS.values.include?char
+      arr << VOWELS.key(char)
     else 
       arr << char
     end
@@ -36,5 +29,3 @@ def decode(st)
   return arr.join
 end
 
-# clients.select{|key, hash| hash["client_id"] == "2180" }
-#=> [["orange", {"client_id"=>"2180"}]]
