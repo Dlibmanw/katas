@@ -8,4 +8,9 @@ describe '' do
   it 'returns "H3" when the input is Hi' do
     expect(encode('Hi')).to eq 'H3'
   end
+
+  it 'returns "Hi" when the input is "H3"' do
+    expect(decode('H3')).to eq 'Hi'
+  end
+
 end
