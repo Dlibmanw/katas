@@ -4,8 +4,14 @@ def work_on_strings(x, y)
   output = []
   if occurance_x.odd? && occurance_y.odd?
     output << x.upcase + y.upcase
+  elsif occurance_x.even? && occurance_y.odd?
+    output << x + y.upcase
+  elsif occurance_x.odd? && occurance_y.even?
+    output << x.upcase + y
+  else
+    output << x + y
   end
-  return output.join()
+  return output.join
+  
 end
 
-# string.count('a')

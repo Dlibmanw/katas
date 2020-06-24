@@ -29,4 +29,5 @@ return "ABABbababa"
 | --- | --- |
 | 'a', 'a' | 'AA' |
 | 'a', 'aa' | 'aAA' |
+| 'aa', 'a' | 'AAa' |
 | 'aa', 'bb' | 'aabb' |

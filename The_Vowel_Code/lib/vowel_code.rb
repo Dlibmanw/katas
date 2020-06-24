@@ -16,7 +16,6 @@ VOWELS = {
   end
   return arr.join
 end
-
 def decode(st)
   arr = []
   st.split("").each do | char |
