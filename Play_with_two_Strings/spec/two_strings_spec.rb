@@ -20,8 +20,8 @@ describe 'work_on_strings' do
   it 'returnd "ABAB" when the input is ("a", "ab")' do
     expect(work_on_strings("ab", "bb")).to eq "abBB"
   end
-  
-  it 'returnd "ababa" when the input is ("ab", "ab")' do
+
+  it 'returnd "ABAB" when the input is ("ab", "ab")' do
     expect(work_on_strings("ab", "ab")).to eq "ABAB"
   end
 end

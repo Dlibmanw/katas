@@ -5,29 +5,19 @@ def work_on_strings(x, y)
 
   x.split('').each {|letter|
     if (y.count(letter.upcase) + y.count(letter.downcase)).odd? 
-      output << letter.upcase
+      output << letter.swapcase
     else
       output << letter
     end
   }
   y.split('').each {|letter|
     if (x.count(letter.upcase) + x.count(letter.downcase)).odd? 
-      output << letter.upcase
+      output << letter.swapcase
     else
       output << letter
     end
   }
-  return output.join
-  # if occurance_x.odd? && occurance_y.odd?
-  #   output << x.upcase + y.upcase
-  # elsif occurance_x.even? && occurance_y.odd?
-  #   output << x + y.upcase
-  # elsif occurance_x.odd? && occurance_y.even?
-  #   output << x.upcase + y
-  # else
-  #   output << x + y
-  # end
-  # return output.join
+return output.join
   
 end
 
