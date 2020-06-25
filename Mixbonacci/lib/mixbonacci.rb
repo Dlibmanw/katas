@@ -3,5 +3,6 @@ def mixbonacci pattern, length
 end
 
 def fib(n)
-  return 0
+  fib = [0, 1]
+  return fib[n]
 end
