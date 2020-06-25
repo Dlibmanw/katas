@@ -3,7 +3,7 @@ def mixbonacci pattern, length
   i_fib = 0
   i_pad = 0
   while output.length < length do 
-    pattern.each {|p|
+    pattern.map {|p|
     if p == :fib
       output << fib(i_fib)
       i_fib += 1
