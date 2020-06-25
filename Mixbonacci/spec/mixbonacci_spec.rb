@@ -72,3 +72,9 @@ describe 'jac' do
     expect(mixbonacci([:jac], 10)).to eq [0, 1, 1, 3, 5, 11, 21, 43, 85, 171]
   end
 end
+
+describe 'pel' do
+  it 'returns [0, 1, 2, 5, 12, 29, 70, 169, 408, 985] when the input is [[:pel], 10]' do
+    expect(mixbonacci([:pel], 10)).to eq [0, 1, 2, 5, 12, 29, 70, 169, 408, 985]
+  end
+end
