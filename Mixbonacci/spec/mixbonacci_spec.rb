@@ -84,3 +84,9 @@ describe 'tri' do
     expect(mixbonacci([:tri], 10)).to eq [0, 0, 1, 1, 2, 4, 7, 13, 24, 44]
   end
 end
+
+describe 'tet' do
+  it 'returns [0, 0, 0, 1, 1, 2, 4, 8, 15, 29] when the input is [[:tet], 10]' do
+    expect(mixbonacci([:tet], 10)).to eq [0, 0, 0, 1, 1, 2, 4, 8, 15, 29]
+  end
+end

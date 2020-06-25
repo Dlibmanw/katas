@@ -5,6 +5,7 @@ def mixbonacci pattern, length
   i_jac = 0
   i_pel = 0
   i_tri = 0
+  i_tet = 0
   if pattern != []
     until output.length == length do 
       pattern.map {|p|
@@ -23,6 +24,9 @@ def mixbonacci pattern, length
       elsif p == :tri and output.length != length
         output << tri(i_tri)
         i_tri += 1
+      elsif p == :tet and output.length != length
+        output << tet(i_tet)
+        i_tet += 1
       else
         break
       end
@@ -82,4 +86,14 @@ def tri(n)
     i += 1
   end
   return tri_seq[n]
+end
+
+def tet(n)
+  tet_seq = [0, 0, 0, 1]
+  i = 4
+  while i <= n do
+    tet_seq << tet_seq[i-1] + tet_seq[i-2] + tet_seq[i-3] + tet_seq[i-4]
+    i += 1
+  end
+  return tet_seq[n]
 end
