@@ -2,15 +2,17 @@ def mixbonacci pattern, length
   output = []
   i_fib = 0
   i_pad = 0
-  pattern.each {|p|
-  if p == :fib
-    output << fib(i_fib)
-    i_fib += 1
-  elsif p == :pad
-    output << pad(i_pad)
-    i_pad += 1
+  while output.length < length do 
+    pattern.each {|p|
+    if p == :fib
+      output << fib(i_fib)
+      i_fib += 1
+    elsif p == :pad
+      output << pad(i_pad)
+      i_pad += 1
+    end
+    }
   end
-  }
   return output
 end
 
