@@ -3,12 +3,16 @@ def mixbonacci pattern, length
 end
 
 def fib(n)
-  fib = [0, 1]
+  fib_seq = [0, 1]
   i = 2
   while i <= n do
-    x = fib[i-1] + fib[i-2]
-    fib << x
+    x = fib_seq[i-1] + fib_seq[i-2]
+    fib_seq << x
     i += 1
   end
-  return fib[n]
+  return fib_seq[n]
+end
+
+def pad(n)
+  return 1
 end
