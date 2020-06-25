@@ -4,6 +4,7 @@ def mixbonacci pattern, length
   i_pad = 0
   i_jac = 0
   i_pel = 0
+  i_tri = 0
   if pattern != []
     until output.length == length do 
       pattern.map {|p|
@@ -19,6 +20,9 @@ def mixbonacci pattern, length
       elsif p == :pel and output.length != length
         output << pel(i_pel)
         i_pel += 1
+      elsif p == :tri and output.length != length
+        output << tri(i_tri)
+        i_tri += 1
       else
         break
       end
@@ -68,4 +72,14 @@ def pel(n)
     i += 1
   end
   return pel_seq[n]
+end
+
+def tri(n)
+  tri_seq = [0, 0, 1]
+  i = 3
+  while i <= n do
+    tri_seq << tri_seq[i-1] + tri_seq[i-2] + tri_seq[i-3]
+    i += 1
+  end
+  return tri_seq[n]
 end

@@ -78,3 +78,9 @@ describe 'pel' do
     expect(mixbonacci([:pel], 10)).to eq [0, 1, 2, 5, 12, 29, 70, 169, 408, 985]
   end
 end
+
+describe 'tri' do
+  it 'returns [0, 0, 1, 1, 2, 4, 7, 13, 24, 44] when the input is [[:tri], 10]' do
+    expect(mixbonacci([:tri], 10)).to eq [0, 0, 1, 1, 2, 4, 7, 13, 24, 44]
+  end
+end
