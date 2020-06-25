@@ -14,6 +14,6 @@ def fib(n)
 end
 
 def pad(n)
-  pad_seq = [1, 0]
+  pad_seq = [1, 0, 0]
   return pad_seq[n]
 end

@@ -28,8 +28,12 @@ describe 'pad' do
     expect(pad(0)).to eq 1
   end
 
-  it 'returns 1 when the input is 0' do
+  it 'returns 0 when the input is 1' do
     expect(pad(1)).to eq 0
+  end
+
+  it 'returns 0 when the input is 2' do
+    expect(pad(2)).to eq 0
   end
 
 end
