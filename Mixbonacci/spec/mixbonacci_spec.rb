@@ -43,5 +43,10 @@ describe 'pad' do
   it 'returns 0 when the input is 4' do
     expect(pad(4)).to eq 0
   end
+end
 
+describe 'mixbonacci' do
+  it 'returns [0, 1] when th input is [[fib, pad], 2]' do
+    expect(mixbonacci([:fib, :pad], 2)).to eq [0, 1]
+  end
 end
