@@ -27,4 +27,9 @@ describe 'pad' do
   it 'returns 1 when the input is 0' do
     expect(pad(0)).to eq 1
   end
+
+  it 'returns 1 when the input is 0' do
+    expect(pad(1)).to eq 0
+  end
+
 end
