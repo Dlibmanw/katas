@@ -2,16 +2,26 @@ def mixbonacci pattern, length
   output = []
   i_fib = 0
   i_pad = 0
-  while output.length < length do 
-    pattern.map {|p|
-    if p == :fib
-      output << fib(i_fib)
-      i_fib += 1
-    elsif p == :pad
-      output << pad(i_pad)
-      i_pad += 1
+  i_jac = 0
+  if pattern != []
+    until output.length == length do 
+      pattern.map {|p|
+      if p == :fib and output.length != length
+        output << fib(i_fib)
+        i_fib += 1
+      elsif p == :pad and output.length != length
+        output << pad(i_pad)
+        i_pad += 1
+      elsif p == :jac and output.length != length
+        output << jac(i_jac)
+        i_jac += 1
+      else
+        break
+      end
+      }
     end
-    }
+  else
+    return []
   end
   return output
 end
@@ -34,4 +44,14 @@ def pad(n)
     i += 1
   end
   return pad_seq[n]
+end
+
+def jac(n)
+  jac_seq = [0, 1]
+  i = 2
+  while i <= n do
+    jac_seq << jac_seq[i-1] + 2 * jac_seq[i-2]
+    i += 1
+  end
+  return jac_seq[n]
 end

@@ -61,4 +61,14 @@ describe 'mixbonacci' do
   it 'returns [0, 1, 1, 0, 1, 0, 2, 1, 3, 0] when th input is [[:fib, :pad], 10]' do
     expect(mixbonacci([:fib, :pad], 10)).to eq [0, 1, 1, 0, 1, 0, 2, 1, 3, 0]
   end
+
+  it 'returns [] when th input is [[], 10]' do
+    expect(mixbonacci([], 10)).to eq []
+  end
+end
+
+describe 'jac' do
+  it 'returns [0, 1, 1, 3, 5, 11, 21, 43, 85, 171] when the input is [[:jac], 10]' do
+    expect(mixbonacci([:jac], 10)).to eq [0, 1, 1, 3, 5, 11, 21, 43, 85, 171]
+  end
 end
