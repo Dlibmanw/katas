@@ -36,4 +36,8 @@ describe 'pad' do
     expect(pad(2)).to eq 0
   end
 
+  it 'returns 1 when the input is 3' do
+    expect(pad(3)).to eq 1
+  end
+
 end
