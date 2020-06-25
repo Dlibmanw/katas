@@ -40,4 +40,8 @@ describe 'pad' do
     expect(pad(3)).to eq 1
   end
 
+  it 'returns 0 when the input is 4' do
+    expect(pad(4)).to eq 0
+  end
+
 end
